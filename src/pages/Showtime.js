@@ -43,6 +43,7 @@ export default function Showtime(props) {
   };
 
   const renderGhe = (daDat, ghe) => {
+    console.log(danhSachGheDangDat);
     if (daDat) {
       return (
         <button className={"ghe gheDaDat"} disabled>
@@ -133,7 +134,7 @@ export default function Showtime(props) {
       danhSachVe: danhSachGheDangDat,
       taiKhoanNguoiDung: JSON.parse(localStorage.getItem("userLogin")).taiKhoan,
     };
-    // console.log(thongTinDatVe);
+    console.log(thongTinDatVe);
     qlNguoiDung
       .datVe(thongTinDatVe)
       .then((res) => {
